@@ -1,6 +1,8 @@
 ---
 title: "Is __Web Scraping__ Legal?"
 subtitle: "How to evaluate the legality of web scraping for your research"
+bibliography: library.bib
+csl: apa-numeric-superscript-brackets.csl
 format:
   revealjs: 
     slide-number: true
@@ -34,9 +36,9 @@ format:
 ## Motivation {.smaller}
 
 -   In the past, finding data for research projects was challenging and expensive. But with the growth of digital technology and the internet, there's now an abundance of data available online.
--   This data provides a detailed and real-time picture of various processes, relationships, and interactions in society, allowing researchers to answer new and old research questions with greater accuracy and efficiency [1](https://digitalcommons.murraystate.edu/faculty/86/).
--   Web scraping (also called **text and data mining (TDM)** by legal scholars) is a data collection method that allows for the automated extraction of insights and information from large amounts of text or data resources [2](https://www.springernature.com/gp/researchers/text-and-data-mining).
--   The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19 or combating misinformation [4](https://www.science.org/doi/pdf/10.1126/science.add6124).
+-   This data provides a detailed and real-time picture of various processes, relationships, and interactions in society, allowing researchers to answer new and old research questions with greater accuracy and efficiency @krotov2020.
+-   Web scraping (also called **text and data mining (TDM)** by legal scholars) is a data collection method that allows for the automated extraction of insights and information from large amounts of text or data resources @springernature2018.
+-   The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19 or combating misinformation @fiil-flynn2022.
 
 **Researchers require web scraping to generate data about the digital economy.**
 
@@ -66,21 +68,21 @@ This presentation touches upon the various legal challenges faced by academic re
 
 -   Web scraping research is limited by a patchwork of copyright laws across different jurisdictions.
 -   Text, images, videos, music, databases and other materials used by researchers are subject to copyright law, which gives the owner (e.g., businesses, individuals) the right to prohibit exploitation (e.g., replication or capturing) without permission.
-- The fact that data is available on the internet does not imply that anyone can extract and store the information [5](https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/).
--  Although some publishers provide limited copyright licences for TDM use, paid licencing is not an affordable option for many critical research projects [4](https://www.science.org/doi/pdf/10.1126/science.add6124).
+- The fact that data is available on the internet does not imply that anyone can extract and store the information @daruwalla2019.
+-  Although some publishers provide limited copyright licences for TDM use, paid licencing is not an affordable option for many critical research projects @fiil-flynn2022.
 
 ### What is NOT copyright? {.smaller}
 
--   Copyright does not protect ideas, concepts, systems, or methods of doing something [12](https://www.copyright.gov/help/faq/faq-protect.html).
+-   Copyright does not protect ideas, concepts, systems, or methods of doing something @u.s.copyrightoffice2016.
 -   There are some exceptions to the copyright law such as research, teaching, parody, critique, news reporting, or commentary. However, each instance of potential copyright infringement must be evaluated individually as copyright issues are not always unambiguous like personal data issues.
--   Limiting the extraction to factual matters, such as names of products and prices, may also be acceptable without violating copyright laws as facts are usually not protected by such laws [5](https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/).
+-   Limiting the extraction to factual matters, such as names of products and prices, may also be acceptable without violating copyright laws as facts are usually not protected by such laws @daruwalla2019.
 
 ### <font size="10">Research exceptions in copyright laws</font> {.smaller}
 
 ::: columns
 ::: {.column width="40%"}
 -   Nearly all countries provide strong copyright protection based on multiple international treaties.
--   These treaties require countries to enforce high copyright standards, but they allow for exceptions, such as those permitting research, to be decided by national legislatures and courts [4](https://www.science.org/doi/pdf/10.1126/science.add6124).
+-   These treaties require countries to enforce high copyright standards, but they allow for exceptions, such as those permitting research, to be decided by national legislatures and courts @fiil-flynn2022.
 -   This results in the varied and inconsistent landscape of exceptions depicted in the figure on the right.
 :::
 
@@ -95,20 +97,20 @@ This presentation touches upon the various legal challenges faced by academic re
 
 ### US: Digital Millennium Copyright Act {.smaller}
 
--   Scraping facts is allowed [9](https://www.zyte.com/learn/is-web-scraping-legal/).
+-   Scraping facts is allowed @daruwalla2021.
 -   Fair Use Doctrine:
     -   purpose and character of the use matters, including whether the use is of a commercial nature or is for nonprofit educational purposes;
     -   nature of the copyrighted work - the degree to which the work that was used relates to copyright's purpose of encouraging creative expression;
     -   amount and substantiality of the portion used in relation to the copyrighted work as a whole;
-    -   effect of the use upon the potential market for or value of the copyrighted work [13](https://www.copyright.gov/fair-use/).
--   Limited database protection [9](https://www.zyte.com/learn/is-web-scraping-legal/).
+    -   effect of the use upon the potential market for or value of the copyrighted work @u.s.copyrightoffice2023.
+-   Limited database protection @daruwalla2021.
 
 ### EU: Copyright Directive {.smaller}
 
 -   Scraping facts is allowed but may vary in country specific law.
 -   Copyright exceptions are country specific.
--   There is no 'fair use' doctrine in EU copyright law comparable to that of the US. Instead, EU law provides an explicit list of exceptions from copyrights granted to the rights holders, each with a specific scope [14](https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b).
--   Broad database protection based on Database Directive [9](https://www.zyte.com/learn/is-web-scraping-legal/).
+-   There is no 'fair use' doctrine in EU copyright law comparable to that of the US. Instead, EU law provides an explicit list of exceptions from copyrights granted to the rights holders, each with a specific scope @witzelerbbacku&partnerrechtsanwaltembb2021.
+-   Broad database protection based on Database Directive @daruwalla2021.
 
 ### Database Rights {.smaller}
 
@@ -120,16 +122,16 @@ When scraping a data source that might fall under database rights, decision-make
 
 -   scraping only some data,
 -   scraping only the data itself (without the replication of the organization of that data),
--   limiting the data scraped to factual or non-copyrighted data [5](https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/).
+-   limiting the data scraped to factual or non-copyrighted data @daruwalla2019.
 
-Because the copyright protects the structure and organisation of the database (rather than the data contained within), scraping cannot result in copying and, for example, republishing the original database's structure (or a substantial part of it) [10](https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/).
+Because the copyright protects the structure and organisation of the database (rather than the data contained within), scraping cannot result in copying and, for example, republishing the original database's structure (or a substantial part of it) @szwed2021.
 
 ### The TDM Exception {.smaller}
 
 -   The new "Digital Single Market" (DSM) directive on copyright permits scraping (reproduction and extraction) of data from databases for the purposes of text and data mining, even if the data is protected by copyright.
 -   However, the exception is limited: database owners have the option to restrict the reproduction and extraction of databases and their content.
 -   That restriction must be implemented in such a way that bots and crawlers, among others, can see it (therefore, on a website there should be installed for example a special program communicating visiting scraping programs that scraping is prohibited).
--   Therefore, unless you take a large amount of data/structure and later republish or sell it, there is a good chance you will not violate any intellectual property rights [10](https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/).
+-   Therefore, unless you take a large amount of data/structure and later republish or sell it, there is a good chance you will not violate any intellectual property rights @szwed2021.
 
 <!--
 # Legal Compliance <br>in Web Scraping
@@ -150,7 +152,7 @@ The response is based on the kind of legal terms of service that are in place:
 -   **clickwrap**: terms are considered clickwrap agreements where the user is required to take an action by which he confirms the consent to the ToS;
 -   **browsewrap**: terms are considered browsewrap agreements if they are posted on a website, typically via a link at the bottom of the page;
 -   **scrollwrap**: sometimes seen as a sub-category of clickwrap, a scrollwrap agreement requires the users to scroll through the text of the ToS before they get to the "I Agree" button;
--   **sign-in-wrap**: sign-in-wrap agreements are a hybrid of browsewrap and clickwrap. The act of acceptance here is the signing in or logging in with a note stating that by doing so, you are agreeing to the ToS [11](https://blog.apify.com/enforceability-of-terms-of-use/#how-do-scrollwrap-agreements-differ-from-other-contracts).
+-   **sign-in-wrap**: sign-in-wrap agreements are a hybrid of browsewrap and clickwrap. The act of acceptance here is the signing in or logging in with a note stating that by doing so, you are agreeing to the ToS @ruzickova2022.
 
 ### Clickwrap vs Browsewrap {.smaller}
 
@@ -158,7 +160,7 @@ The response is based on the kind of legal terms of service that are in place:
 |------------------------------------|------------------------------------|
 | \- If you have to explicitly agree to the ToS in any way (such as by logging in, clicking 'I agree' or 'OK', or downloading the app), these are click wrap ToS. | \- These ToS are usually accessible via a link at the bottom of a webpage.                                                                                                                                            |
 | \- You are informed of the existence of the ToS, and you are actively agreeing to them.                                                                         | \- They state that you agree to the terms simply by using or browsing the site.                                                                                                                                       |
-| \- Courts have ruled that your explicit agreement creates a binding contract that you must follow.                                                              | \- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them [9](https://www.zyte.com/learn/is-web-scraping-legal/). |
+| \- Courts have ruled that your explicit agreement creates a binding contract that you must follow.                                                              | \- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them @daruwalla2021. |
 
 ## Personal Data
 
@@ -167,13 +169,13 @@ The response is based on the kind of legal terms of service that are in place:
 -   Personal data, or personally identifiable information (PII), refers to any data that can directly or indirectly identify an individual.
 -   Common types of personal data include name, email, phone number, address, user name, IP address, date of birth, employment information, bank/credit card information, medical data, and biometric data.
 -   Public personal data is not an exception so analysis must be conducted before scraping it.
--   Different legal jurisdictions (US, EU, Canada, Australia etc.) have different regulations for personal data so you need to identify the jurisdiction in which the data owners reside [5](https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/).
+-   Different legal jurisdictions (US, EU, Canada, Australia etc.) have different regulations for personal data so you need to identify the jurisdiction in which the data owners reside @daruwalla2019.
 
 ### GDPR Compliance {.smaller}
 
 -   The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA), which includes all EU countries, plus Iceland, Liechtenstein, and Norway.
--   Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens [6](https://gdpr.eu/what-is-gdpr/).
--   To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to receive a **consent** of a person of which data you're going to process, to be performing **a task carried out in the public interest** or, as a controller or even as a third party, **to have a legitimate interest** to process the data and such **processing is necessary to achieve that interest** [10](https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/).
+-   Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens @wolford2018.
+-   To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to receive a **consent** of a person of which data you're going to process, to be performing **a task carried out in the public interest** or, as a controller or even as a third party, **to have a legitimate interest** to process the data and such **processing is necessary to achieve that interest** @szwed2021.
 
 ### Lawful Reasons (GDPR) {.smaller}
 
@@ -183,7 +185,7 @@ The response is based on the kind of legal terms of service that are in place:
 -   **Vital Interest** - when data processing is in the data subject's vital interests, for example, when this might protect their life.
 -   **Legitimate Interest** - for example, when a bank uses personal data to determine whether the data subject is eligible for a higher-interest savings account.
 
-In all other cases, the company or organisation must obtain the data subject's permission (known as "**consent**") before collecting or reusing their personal information [8](https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm).
+In all other cases, the company or organisation must obtain the data subject's permission (known as "**consent**") before collecting or reusing their personal information @youreurope2022.
 
 ### Type of Personal Data (GDPR) {.smaller}
 
@@ -199,7 +201,7 @@ Sensitive data includes:
 -   health, sex life or sexual orientation data,
 -   or trade union membership.
 
-Therefore, you should avoid scraping this data unless you have explicit consent and legitimate reason to do so [7](https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/).
+Therefore, you should avoid scraping this data unless you have explicit consent and legitimate reason to do so @daruwalla2018.
 
 ### Data Protection Principles (GDPR) {.smaller}
 
@@ -211,7 +213,7 @@ If you process data, you have to do so according to the data protection principl
 -   **Accuracy** - You must keep personal data accurate and up to date.
 -   **Storage limitation** - You may only store personally identifying data for as long as necessary for the specified purpose.
 -   **Integrity and confidentiality** - Processing must be done in such a way as to ensure appropriate security, integrity, and confidentiality (e.g. by using encryption).
--   **Accountability** - The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles [6](https://gdpr.eu/what-is-gdpr/).
+-   **Accountability** - The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles @wolford2018.
 
 ### Data Policies (GDPR) {.smaller}
 
@@ -219,16 +221,16 @@ Even when you received an explicit consent from the data subject, you need to en
 
 -   Ensure that data subjects are aware of the company's data protection and privacy policy.
 -   Comply with Data Subject Access Rights (DSAR), including the right to withdraw consent, request a copy of data, or request deletion of data.
--   If consent is withdrawn or a DSAR for deletion is received, delete or anonymize the personal data as it is no longer legally justifiable to retain it [7](https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/).
+-   If consent is withdrawn or a DSAR for deletion is received, delete or anonymize the personal data as it is no longer legally justifiable to retain it @daruwalla2018.
 
 ### Residential IPs (GDPR) {.smaller}
 
-**Residential proxies** provide real IP addresses of actual devices. When using a residential IP for scraping (or even just accessing web pages), you appear to be accessing websites and social media platforms from an actual home-based IP [15](https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/).
+**Residential proxies** provide real IP addresses of actual devices. When using a residential IP for scraping (or even just accessing web pages), you appear to be accessing websites and social media platforms from an actual home-based IP @netnut2020.
 
 -   IP addresses are considered personally identifiable information (PII) under the GDPR regulation.
 -   Ensure that any EU residential IPs used as proxies are GDPR compliant.
 -   Obtain explicit consent from the owner of a residential IP before using it as a web scraping proxy.
--   If obtaining residential proxies from a third-party provider, ensure that they have obtained consent and are in compliance with GDPR before using the proxy [7](https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/).
+-   If obtaining residential proxies from a third-party provider, ensure that they have obtained consent and are in compliance with GDPR before using the proxy @daruwalla2018.
 
 # Evaluate the Legality <br>of Your Scraping Project
 
@@ -274,22 +276,7 @@ It's important to consider the territorial scope when evaluating the legality of
 -   **Are you scraping data behind a login?** Logging into a website to extract data can raise legal issues. Logging in typically requires accepting the website's terms and conditions (T&C) which might explicitly state that automatic data extraction is prohibited.
 -   **Are you scraping data from a mobile app?** By downloading the app, you agree to terms and conditions.
 
-# References {.smaller}
+### References {.smaller}
 
-(1) <https://digitalcommons.murraystate.edu/faculty/86/>
-(2) <https://www.springernature.com/gp/researchers/text-and-data-mining>
-(3) <https://www.zyte.com/learn/what-is-web-scraping/>
-(4) <https://www.science.org/doi/pdf/10.1126/science.add6124>
-(5) <https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/>
-(6) <https://gdpr.eu/what-is-gdpr/>
-(7) <https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/>
-(8) <https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm>
-(9) <https://www.zyte.com/learn/is-web-scraping-legal/>
-
-## References (continued) {.smaller}
-(10) <https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/>
-(11) <https://blog.apify.com/enforceability-of-terms-of-use/#how-do-scrollwrap-agreements-differ-from-other-contracts>
-(12) <https://www.copyright.gov/help/faq/faq-protect.html>
-(13) <https://www.copyright.gov/fair-use/>
-(14) <https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b>
-(15) <https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/>
+::: {#refs}
+:::

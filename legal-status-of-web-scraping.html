@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.295">
+<script src="legal-status-of-web-scraping_files/libs/clipboard/clipboard.min.js"></script>
+<script src="legal-status-of-web-scraping_files/libs/quarto-html/tabby.min.js"></script>
+<script src="legal-status-of-web-scraping_files/libs/quarto-html/popper.min.js"></script>
+<script src="legal-status-of-web-scraping_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="legal-status-of-web-scraping_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="legal-status-of-web-scraping_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="legal-status-of-web-scraping_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.2.269">
 
   <title>Is Web Scraping Legal?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,19 +18,36 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="legal-status-of-web-scraping_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <script src="legal-status-of-web-scraping_files/libs/clipboard/clipboard.min.js"></script>
-  <script src="legal-status-of-web-scraping_files/libs/quarto-html/tabby.min.js"></script>
-  <script src="legal-status-of-web-scraping_files/libs/quarto-html/popper.min.js"></script>
-  <script src="legal-status-of-web-scraping_files/libs/quarto-html/tippy.umd.min.js"></script>
-  <link href="legal-status-of-web-scraping_files/libs/quarto-html/tippy.css" rel="stylesheet">
-  <link href="legal-status-of-web-scraping_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
-  <link id="quarto-text-highlighting-styles" href="legal-status-of-web-scraping_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
   <link href="legal-status-of-web-scraping_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="legal-status-of-web-scraping_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="legal-status-of-web-scraping_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -38,7 +61,7 @@
   }
 
   .callout.callout-style-simple { 
-    padding: 0em 0.7em;
+    padding: 0em 0.5em;
     border-left: solid #acacac .3rem;
     border-right: solid 1px silver;
     border-top: solid 1px silver;
@@ -149,8 +172,7 @@
     display: none !important;
   }
 
-  .callout.callout-captioned .callout-body > :last-child,
-  .callout.callout-captioned .callout-body > div > :last-child {
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
     margin-bottom: 0.5rem;
   }
 
@@ -315,15 +337,18 @@
     }
   </style>
 </head>
-<body>
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-color="black" data-background-image="img/title-background.jpg" data-background-opacity="0.2" data-background-size="cover" class="center">
+<section id="title-slide" data-background-color="black" data-background-image="img/title-background.jpg" data-background-opacity="0.2" data-background-size="cover" class="quarto-title-block center">
   <h1 class="title">Is <strong>Web Scraping</strong> Legal?</h1>
   <p class="subtitle">How to evaluate the legality of web scraping for your research</p>
-</section>
 
+<div class="quarto-title-authors">
+</div>
+
+</section>
 <section>
 <section id="agenda" class="title-slide slide level1 center">
 <h1>Agenda</h1>
@@ -345,9 +370,9 @@
 <h2>Motivation</h2>
 <ul>
 <li>In the past, finding data for research projects was challenging and expensive. But with the growth of digital technology and the internet, there’s now an abundance of data available online.</li>
-<li>This data provides a detailed and real-time picture of various processes, relationships, and interactions in society, allowing researchers to answer new and old research questions with greater accuracy and efficiency <a href="https://digitalcommons.murraystate.edu/faculty/86/">1</a>.</li>
-<li>Web scraping (also called <strong>text and data mining (TDM)</strong> by legal scholars) is a data collection method that allows for the automated extraction of insights and information from large amounts of text or data resources <a href="https://www.springernature.com/gp/researchers/text-and-data-mining">2</a>.</li>
-<li>The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19 or combating misinformation <a href="https://www.science.org/doi/pdf/10.1126/science.add6124">4</a>.</li>
+<li>This data provides a detailed and real-time picture of various processes, relationships, and interactions in society, allowing researchers to answer new and old research questions with greater accuracy and efficiency<span class="citation" data-cites="krotov2020"><sup>[<a href="#/references" role="doc-biblioref" onclick="">1</a>]</sup></span>.</li>
+<li>Web scraping (also called <strong>text and data mining (TDM)</strong> by legal scholars) is a data collection method that allows for the automated extraction of insights and information from large amounts of text or data resources<span class="citation" data-cites="springernature2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">2</a>]</sup></span>.</li>
+<li>The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19 or combating misinformation<span class="citation" data-cites="fiil-flynn2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">3</a>]</sup></span>.</li>
 </ul>
 <p><strong>Researchers require web scraping to generate data about the digital economy.</strong></p>
 </section>
@@ -386,16 +411,16 @@
 <ul>
 <li>Web scraping research is limited by a patchwork of copyright laws across different jurisdictions.</li>
 <li>Text, images, videos, music, databases and other materials used by researchers are subject to copyright law, which gives the owner (e.g., businesses, individuals) the right to prohibit exploitation (e.g., replication or capturing) without permission.</li>
-<li>The fact that data is available on the internet does not imply that anyone can extract and store the information <a href="https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/">5</a>.</li>
-<li>Although some publishers provide limited copyright licences for TDM use, paid licencing is not an affordable option for many critical research projects <a href="https://www.science.org/doi/pdf/10.1126/science.add6124">4</a>.</li>
+<li>The fact that data is available on the internet does not imply that anyone can extract and store the information<span class="citation" data-cites="daruwalla2019"><sup>[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</sup></span>.</li>
+<li>Although some publishers provide limited copyright licences for TDM use, paid licencing is not an affordable option for many critical research projects<span class="citation" data-cites="fiil-flynn2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">3</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="what-is-not-copyright" class="slide level3 smaller">
 <h3>What is NOT copyright?</h3>
 <ul>
-<li>Copyright does not protect ideas, concepts, systems, or methods of doing something <a href="https://www.copyright.gov/help/faq/faq-protect.html">12</a>.</li>
+<li>Copyright does not protect ideas, concepts, systems, or methods of doing something<span class="citation" data-cites="u.s.copyrightoffice2016"><sup>[<a href="#/references" role="doc-biblioref" onclick="">5</a>]</sup></span>.</li>
 <li>There are some exceptions to the copyright law such as research, teaching, parody, critique, news reporting, or commentary. However, each instance of potential copyright infringement must be evaluated individually as copyright issues are not always unambiguous like personal data issues.</li>
-<li>Limiting the extraction to factual matters, such as names of products and prices, may also be acceptable without violating copyright laws as facts are usually not protected by such laws <a href="https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/">5</a>.</li>
+<li>Limiting the extraction to factual matters, such as names of products and prices, may also be acceptable without violating copyright laws as facts are usually not protected by such laws<span class="citation" data-cites="daruwalla2019"><sup>[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="research-exceptions-in-copyright-laws" class="slide level3 smaller">
@@ -404,7 +429,7 @@
 <div class="column" style="width:40%;">
 <ul>
 <li>Nearly all countries provide strong copyright protection based on multiple international treaties.</li>
-<li>These treaties require countries to enforce high copyright standards, but they allow for exceptions, such as those permitting research, to be decided by national legislatures and courts <a href="https://www.science.org/doi/pdf/10.1126/science.add6124">4</a>.</li>
+<li>These treaties require countries to enforce high copyright standards, but they allow for exceptions, such as those permitting research, to be decided by national legislatures and courts<span class="citation" data-cites="fiil-flynn2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">3</a>]</sup></span>.</li>
 <li>This results in the varied and inconsistent landscape of exceptions depicted in the figure on the right.</li>
 </ul>
 </div><div class="column" style="width:60%;">
@@ -417,15 +442,15 @@
 <section id="us-digital-millennium-copyright-act" class="slide level3 smaller">
 <h3>US: Digital Millennium Copyright Act</h3>
 <ul>
-<li>Scraping facts is allowed <a href="https://www.zyte.com/learn/is-web-scraping-legal/">9</a>.</li>
+<li>Scraping facts is allowed<span class="citation" data-cites="daruwalla2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">6</a>]</sup></span>.</li>
 <li>Fair Use Doctrine:
 <ul>
 <li>purpose and character of the use matters, including whether the use is of a commercial nature or is for nonprofit educational purposes;</li>
 <li>nature of the copyrighted work - the degree to which the work that was used relates to copyright’s purpose of encouraging creative expression;</li>
 <li>amount and substantiality of the portion used in relation to the copyrighted work as a whole;</li>
-<li>effect of the use upon the potential market for or value of the copyrighted work <a href="https://www.copyright.gov/fair-use/">13</a>.</li>
+<li>effect of the use upon the potential market for or value of the copyrighted work<span class="citation" data-cites="u.s.copyrightoffice2023"><sup>[<a href="#/references" role="doc-biblioref" onclick="">7</a>]</sup></span>.</li>
 </ul></li>
-<li>Limited database protection <a href="https://www.zyte.com/learn/is-web-scraping-legal/">9</a>.</li>
+<li>Limited database protection<span class="citation" data-cites="daruwalla2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">6</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="eu-copyright-directive" class="slide level3 smaller">
@@ -433,8 +458,8 @@
 <ul>
 <li>Scraping facts is allowed but may vary in country specific law.</li>
 <li>Copyright exceptions are country specific.</li>
-<li>There is no ‘fair use’ doctrine in EU copyright law comparable to that of the US. Instead, EU law provides an explicit list of exceptions from copyrights granted to the rights holders, each with a specific scope <a href="https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b">14</a>.</li>
-<li>Broad database protection based on Database Directive <a href="https://www.zyte.com/learn/is-web-scraping-legal/">9</a>.</li>
+<li>There is no ‘fair use’ doctrine in EU copyright law comparable to that of the US. Instead, EU law provides an explicit list of exceptions from copyrights granted to the rights holders, each with a specific scope<span class="citation" data-cites="witzelerbbacku&amp;partnerrechtsanwaltembb2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">8</a>]</sup></span>.</li>
+<li>Broad database protection based on Database Directive<span class="citation" data-cites="daruwalla2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">6</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="database-rights" class="slide level3 smaller">
@@ -445,9 +470,9 @@
 <ul>
 <li>scraping only some data,</li>
 <li>scraping only the data itself (without the replication of the organization of that data),</li>
-<li>limiting the data scraped to factual or non-copyrighted data <a href="https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/">5</a>.</li>
+<li>limiting the data scraped to factual or non-copyrighted data<span class="citation" data-cites="daruwalla2019"><sup>[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</sup></span>.</li>
 </ul>
-<p>Because the copyright protects the structure and organisation of the database (rather than the data contained within), scraping cannot result in copying and, for example, republishing the original database’s structure (or a substantial part of it) <a href="https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/">10</a>.</p>
+<p>Because the copyright protects the structure and organisation of the database (rather than the data contained within), scraping cannot result in copying and, for example, republishing the original database’s structure (or a substantial part of it)<span class="citation" data-cites="szwed2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">9</a>]</sup></span>.</p>
 </section>
 <section id="the-tdm-exception" class="slide level3 smaller">
 <h3>The TDM Exception</h3>
@@ -455,7 +480,7 @@
 <li>The new “Digital Single Market” (DSM) directive on copyright permits scraping (reproduction and extraction) of data from databases for the purposes of text and data mining, even if the data is protected by copyright.</li>
 <li>However, the exception is limited: database owners have the option to restrict the reproduction and extraction of databases and their content.</li>
 <li>That restriction must be implemented in such a way that bots and crawlers, among others, can see it (therefore, on a website there should be installed for example a special program communicating visiting scraping programs that scraping is prohibited).</li>
-<li>Therefore, unless you take a large amount of data/structure and later republish or sell it, there is a good chance you will not violate any intellectual property rights <a href="https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/">10</a>.</li>
+<li>Therefore, unless you take a large amount of data/structure and later republish or sell it, there is a good chance you will not violate any intellectual property rights<span class="citation" data-cites="szwed2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">9</a>]</sup></span>.</li>
 </ul>
 <!--
 # Legal Compliance <br>in Web Scraping
@@ -476,12 +501,16 @@
 <li><strong>clickwrap</strong>: terms are considered clickwrap agreements where the user is required to take an action by which he confirms the consent to the ToS;</li>
 <li><strong>browsewrap</strong>: terms are considered browsewrap agreements if they are posted on a website, typically via a link at the bottom of the page;</li>
 <li><strong>scrollwrap</strong>: sometimes seen as a sub-category of clickwrap, a scrollwrap agreement requires the users to scroll through the text of the ToS before they get to the “I Agree” button;</li>
-<li><strong>sign-in-wrap</strong>: sign-in-wrap agreements are a hybrid of browsewrap and clickwrap. The act of acceptance here is the signing in or logging in with a note stating that by doing so, you are agreeing to the ToS <a href="https://blog.apify.com/enforceability-of-terms-of-use/#how-do-scrollwrap-agreements-differ-from-other-contracts">11</a>.</li>
+<li><strong>sign-in-wrap</strong>: sign-in-wrap agreements are a hybrid of browsewrap and clickwrap. The act of acceptance here is the signing in or logging in with a note stating that by doing so, you are agreeing to the ToS<span class="citation" data-cites="ruzickova2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">10</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="clickwrap-vs-browsewrap" class="slide level3 smaller">
 <h3>Clickwrap vs Browsewrap</h3>
 <table>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Clickwrap: <br>ToS that you must explicitly agree to.</th>
@@ -499,7 +528,7 @@
 </tr>
 <tr class="odd">
 <td>- Courts have ruled that your explicit agreement creates a binding contract that you must follow.</td>
-<td>- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them <a href="https://www.zyte.com/learn/is-web-scraping-legal/">9</a>.</td>
+<td>- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them<span class="citation" data-cites="daruwalla2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">6</a>]</sup></span>.</td>
 </tr>
 </tbody>
 </table>
@@ -515,15 +544,15 @@
 <li>Personal data, or personally identifiable information (PII), refers to any data that can directly or indirectly identify an individual.</li>
 <li>Common types of personal data include name, email, phone number, address, user name, IP address, date of birth, employment information, bank/credit card information, medical data, and biometric data.</li>
 <li>Public personal data is not an exception so analysis must be conducted before scraping it.</li>
-<li>Different legal jurisdictions (US, EU, Canada, Australia etc.) have different regulations for personal data so you need to identify the jurisdiction in which the data owners reside <a href="https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/">5</a>.</li>
+<li>Different legal jurisdictions (US, EU, Canada, Australia etc.) have different regulations for personal data so you need to identify the jurisdiction in which the data owners reside<span class="citation" data-cites="daruwalla2019"><sup>[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="gdpr-compliance" class="slide level3 smaller">
 <h3>GDPR Compliance</h3>
 <ul>
 <li>The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA), which includes all EU countries, plus Iceland, Liechtenstein, and Norway.</li>
-<li>Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens <a href="https://gdpr.eu/what-is-gdpr/">6</a>.</li>
-<li>To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to receive a <strong>consent</strong> of a person of which data you’re going to process, to be performing <strong>a task carried out in the public interest</strong> or, as a controller or even as a third party, <strong>to have a legitimate interest</strong> to process the data and such <strong>processing is necessary to achieve that interest</strong> <a href="https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/">10</a>.</li>
+<li>Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens<span class="citation" data-cites="wolford2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">11</a>]</sup></span>.</li>
+<li>To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to receive a <strong>consent</strong> of a person of which data you’re going to process, to be performing <strong>a task carried out in the public interest</strong> or, as a controller or even as a third party, <strong>to have a legitimate interest</strong> to process the data and such <strong>processing is necessary to achieve that interest</strong><span class="citation" data-cites="szwed2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">9</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="lawful-reasons-gdpr" class="slide level3 smaller">
@@ -535,7 +564,7 @@
 <li><strong>Vital Interest</strong> - when data processing is in the data subject’s vital interests, for example, when this might protect their life.</li>
 <li><strong>Legitimate Interest</strong> - for example, when a bank uses personal data to determine whether the data subject is eligible for a higher-interest savings account.</li>
 </ul>
-<p>In all other cases, the company or organisation must obtain the data subject’s permission (known as “<strong>consent</strong>”) before collecting or reusing their personal information <a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm">8</a>.</p>
+<p>In all other cases, the company or organisation must obtain the data subject’s permission (known as “<strong>consent</strong>”) before collecting or reusing their personal information<span class="citation" data-cites="youreurope2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">12</a>]</sup></span>.</p>
 </section>
 <section id="type-of-personal-data-gdpr" class="slide level3 smaller">
 <h3>Type of Personal Data (GDPR)</h3>
@@ -550,7 +579,7 @@
 <li>health, sex life or sexual orientation data,</li>
 <li>or trade union membership.</li>
 </ul>
-<p>Therefore, you should avoid scraping this data unless you have explicit consent and legitimate reason to do so <a href="https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/">7</a>.</p>
+<p>Therefore, you should avoid scraping this data unless you have explicit consent and legitimate reason to do so<span class="citation" data-cites="daruwalla2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">13</a>]</sup></span>.</p>
 </section>
 <section id="data-protection-principles-gdpr" class="slide level3 smaller">
 <h3>Data Protection Principles (GDPR)</h3>
@@ -562,7 +591,7 @@
 <li><strong>Accuracy</strong> - You must keep personal data accurate and up to date.</li>
 <li><strong>Storage limitation</strong> - You may only store personally identifying data for as long as necessary for the specified purpose.</li>
 <li><strong>Integrity and confidentiality</strong> - Processing must be done in such a way as to ensure appropriate security, integrity, and confidentiality (e.g.&nbsp;by using encryption).</li>
-<li><strong>Accountability</strong> - The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles <a href="https://gdpr.eu/what-is-gdpr/">6</a>.</li>
+<li><strong>Accountability</strong> - The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles<span class="citation" data-cites="wolford2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">11</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="data-policies-gdpr" class="slide level3 smaller">
@@ -571,17 +600,17 @@
 <ul>
 <li>Ensure that data subjects are aware of the company’s data protection and privacy policy.</li>
 <li>Comply with Data Subject Access Rights (DSAR), including the right to withdraw consent, request a copy of data, or request deletion of data.</li>
-<li>If consent is withdrawn or a DSAR for deletion is received, delete or anonymize the personal data as it is no longer legally justifiable to retain it <a href="https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/">7</a>.</li>
+<li>If consent is withdrawn or a DSAR for deletion is received, delete or anonymize the personal data as it is no longer legally justifiable to retain it<span class="citation" data-cites="daruwalla2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">13</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="residential-ips-gdpr" class="slide level3 smaller">
 <h3>Residential IPs (GDPR)</h3>
-<p><strong>Residential proxies</strong> provide real IP addresses of actual devices. When using a residential IP for scraping (or even just accessing web pages), you appear to be accessing websites and social media platforms from an actual home-based IP <a href="https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/">15</a>.</p>
+<p><strong>Residential proxies</strong> provide real IP addresses of actual devices. When using a residential IP for scraping (or even just accessing web pages), you appear to be accessing websites and social media platforms from an actual home-based IP<span class="citation" data-cites="netnut2020"><sup>[<a href="#/references" role="doc-biblioref" onclick="">14</a>]</sup></span>.</p>
 <ul>
 <li>IP addresses are considered personally identifiable information (PII) under the GDPR regulation.</li>
 <li>Ensure that any EU residential IPs used as proxies are GDPR compliant.</li>
 <li>Obtain explicit consent from the owner of a residential IP before using it as a web scraping proxy.</li>
-<li>If obtaining residential proxies from a third-party provider, ensure that they have obtained consent and are in compliance with GDPR before using the proxy <a href="https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/">7</a>.</li>
+<li>If obtaining residential proxies from a third-party provider, ensure that they have obtained consent and are in compliance with GDPR before using the proxy<span class="citation" data-cites="daruwalla2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">13</a>]</sup></span>.</li>
 </ul>
 </section>
 </section>
@@ -647,32 +676,52 @@
 <li><strong>Are you scraping data from a mobile app?</strong> By downloading the app, you agree to terms and conditions.</li>
 </ul>
 </section>
-</section>
-<section>
-<section id="references" class="title-slide slide level1 smaller center">
-<h1>References</h1>
-<ol type="1">
-<li><a href="https://digitalcommons.murraystate.edu/faculty/86/" class="uri">https://digitalcommons.murraystate.edu/faculty/86/</a></li>
-<li><a href="https://www.springernature.com/gp/researchers/text-and-data-mining" class="uri">https://www.springernature.com/gp/researchers/text-and-data-mining</a></li>
-<li><a href="https://www.zyte.com/learn/what-is-web-scraping/" class="uri">https://www.zyte.com/learn/what-is-web-scraping/</a></li>
-<li><a href="https://www.science.org/doi/pdf/10.1126/science.add6124" class="uri">https://www.science.org/doi/pdf/10.1126/science.add6124</a></li>
-<li><a href="https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/" class="uri">https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/</a></li>
-<li><a href="https://gdpr.eu/what-is-gdpr/" class="uri">https://gdpr.eu/what-is-gdpr/</a></li>
-<li><a href="https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/" class="uri">https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/</a></li>
-<li><a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm" class="uri">https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm</a></li>
-<li><a href="https://www.zyte.com/learn/is-web-scraping-legal/" class="uri">https://www.zyte.com/learn/is-web-scraping-legal/</a></li>
-</ol>
-</section>
-<section id="references-continued" class="title-slide slide level2 smaller center">
-<h2>References (continued)</h2>
-<ol start="10" type="1">
-<li><a href="https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/" class="uri">https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/</a></li>
-<li><a href="https://blog.apify.com/enforceability-of-terms-of-use/#how-do-scrollwrap-agreements-differ-from-other-contracts" class="uri">https://blog.apify.com/enforceability-of-terms-of-use/#how-do-scrollwrap-agreements-differ-from-other-contracts</a></li>
-<li><a href="https://www.copyright.gov/help/faq/faq-protect.html" class="uri">https://www.copyright.gov/help/faq/faq-protect.html</a></li>
-<li><a href="https://www.copyright.gov/fair-use/" class="uri">https://www.copyright.gov/fair-use/</a></li>
-<li><a href="https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b" class="uri">https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b</a></li>
-<li><a href="https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/" class="uri">https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/</a></li>
-</ol>
+<section id="references" class="slide level3 smaller scrollable">
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-krotov2020" class="csl-entry" role="doc-biblioentry">
+1. Krotov, V., Johnson, L., &amp; Silva, L. (2020). Tutorial: <span>Legality</span> and <span>Ethics</span> of <span>Web</span> <span>Scraping</span>. <em>Communications of the Association for Information Systems</em>, <em>47</em>, 555–581. <a href="https://doi.org/10.17705/1CAIS.04724">https://doi.org/10.17705/1CAIS.04724</a>
+</div>
+<div id="ref-springernature2018" class="csl-entry" role="doc-biblioentry">
+2. Springer Nature. (2018). <em>Text and <span>Data</span> <span>Mining</span> at <span>Springer</span> <span>Nature</span></em>. <a href="https://www.springernature.com/gp/researchers/text-and-data-mining">https://www.springernature.com/gp/researchers/text-and-data-mining</a>
+</div>
+<div id="ref-fiil-flynn2022" class="csl-entry" role="doc-biblioentry">
+3. Fiil-Flynn, S. M., Butler, B., Carroll, M., Cohen-Sasson, O., Craig, C., Guibault, L., Jaszi, P., Jütte, B. J., Katz, A., Quintais, J. P., Margoni, T., Souza, A. R. de, Sag, M., Samberg, R., Schirru, L., Senftleben, M., Tur-Sinai, O., &amp; Contreras, J. L. (2022). Legal reform to enhance global text and data mining research. <em>Science</em>, <em>378</em>(6623), 951–953. <a href="https://doi.org/10.1126/science.add6124">https://doi.org/10.1126/science.add6124</a>
+</div>
+<div id="ref-daruwalla2019" class="csl-entry" role="doc-biblioentry">
+4. Daruwalla, S. (2019). Solution <span>Architecture</span>: <span>Conducting</span> <span>Web</span> <span>Scraping</span> <span>Legal</span> <span>Review</span>. In <em>Zyte</em>. <a href="https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/">https://www.zyte.com/blog/solution-architecture-part-3-conducting-a-web-scraping-legal-review/</a>
+</div>
+<div id="ref-u.s.copyrightoffice2016" class="csl-entry" role="doc-biblioentry">
+5. U.S. Copyright Office. (2016). <em>What <span>Does</span> <span>Copyright</span> <span>Protect</span>?</em> <a href="https://www.copyright.gov/help/faq/faq-protect.html">https://www.copyright.gov/help/faq/faq-protect.html</a>
+</div>
+<div id="ref-daruwalla2021" class="csl-entry" role="doc-biblioentry">
+6. Daruwalla, S. (2021). Is <span>Web</span> &amp; <span>Data</span> <span>Scraping</span> <span>Legally</span> <span>Allowed</span>? In <em>Zyte</em>. <a href="https://www.zyte.com/learn/is-web-scraping-legal/">https://www.zyte.com/learn/is-web-scraping-legal/</a>
+</div>
+<div id="ref-u.s.copyrightoffice2023" class="csl-entry" role="doc-biblioentry">
+7. U.S. Copyright Office. (2023). <em>U.<span>S</span>. <span>Copyright</span> <span>Office</span> <span>Fair</span> <span>Use</span> <span>Index</span></em>. <a href="https://www.copyright.gov/fair-use/">https://www.copyright.gov/fair-use/</a>
+</div>
+<div id="ref-witzelerbbacku&amp;partnerrechtsanwaltembb2021" class="csl-entry" role="doc-biblioentry">
+8. Witzel Erb Backu &amp; Partner Rechtsanwälte mbB. (2021). Snapshot: The scope of copyright in <span>European</span> <span>Union</span>. In <em>Lexology</em>. <a href="https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b">https://www.lexology.com/library/detail.aspx?g=1013cebf-9e8e-41a0-bac0-595f0e04133b</a>
+</div>
+<div id="ref-szwed2021" class="csl-entry" role="doc-biblioentry">
+9. Szwed, P. (2021). Is web scraping legal? <span>A</span> short guide on scraping under <span>EU</span> law. In <em>Discover Digital Law</em>. <a href="https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/">https://discoverdigitallaw.com/is-web-scraping-legal-short-guide-on-scraping-under-the-eu-jurisdiction/</a>
+</div>
+<div id="ref-ruzickova2022" class="csl-entry" role="doc-biblioentry">
+10. Růžičková, L. (2022). Are website terms of use enforced? In <em>Apify</em>. <a href="https://blog.apify.com/enforceability-of-terms-of-use/">https://blog.apify.com/enforceability-of-terms-of-use/</a>
+</div>
+<div id="ref-wolford2018" class="csl-entry" role="doc-biblioentry">
+11. Wolford, B. (2018). What is <span>GDPR</span>, the <span>EU</span>’s new data protection law? In <em>GDPR.eu</em>. <a href="https://gdpr.eu/what-is-gdpr/">https://gdpr.eu/what-is-gdpr/</a>
+</div>
+<div id="ref-youreurope2022" class="csl-entry" role="doc-biblioentry">
+12. Your Europe. (2022). <em>Data protection and online privacy</em>. <a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm">https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm</a>
+</div>
+<div id="ref-daruwalla2018" class="csl-entry" role="doc-biblioentry">
+13. Daruwalla, S. (2018). <span>GDPR</span> <span>Compliance</span> <span>For</span> <span>Web</span> <span>Scrapers</span>: <span>The</span> <span>Step</span>-by-step <span>Guide</span>. In <em>Zyte</em>. <a href="https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/">https://www.zyte.com/blog/web-scraping-gdpr-compliance-guide/</a>
+</div>
+<div id="ref-netnut2020" class="csl-entry" role="doc-biblioentry">
+14. NetNut. (2020). <em>Residential <span>Proxies</span> for <span>Scraping</span> <span>Web</span> <span>Data</span></em>. <a href="https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/">https://netnut.io/10-reasons-to-use-residential-proxies-for-scraping/</a>
+</div>
+</div>
 <div class="footer footer-default">
 
 </div>
@@ -889,8 +938,26 @@
         ]
       });
     </script>
-    <script type="application/javascript">
+    <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
@@ -909,7 +976,24 @@
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
         button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
         setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
           button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
@@ -939,31 +1023,50 @@
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          let href = ref.getAttribute('href');
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
           return note.innerHTML;
         });
       }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
       var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
       for (var i=0; i<bibliorefs.length; i++) {
         const ref = bibliorefs[i];
-        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-        tippyHover(ref, function() {
-          var popup = window.document.createElement('div');
-          cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
           });
-          return popup.innerHTML;
-        });
+        }
       }
     });
     </script>
