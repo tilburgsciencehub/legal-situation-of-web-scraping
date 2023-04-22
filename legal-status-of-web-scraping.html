@@ -369,10 +369,10 @@
 <section id="motivation" class="title-slide slide level2 smaller center">
 <h2>Motivation</h2>
 <ul>
-<li>In the past, finding data for research projects was challenging and expensive. But with the growth of digital technology and the internet, there’s now an abundance of data available online.</li>
-<li>This data provides a detailed and real-time picture of various processes, relationships, and interactions in society, allowing researchers to answer new and old research questions with greater accuracy and efficiency<span class="citation" data-cites="krotov2020"><sup>[<a href="#/references" role="doc-biblioref" onclick="">1</a>]</sup></span>.</li>
+<li>In the past, getting data for research was challenging and expensive, but today, digital technology and the internet have made a vast amount of data easily accessible online.</li>
+<li>This data offers real-time insights into various societal processes, relationships, and interactions, enabling researchers to answer research questions more accurately and efficiently<span class="citation" data-cites="krotov2020"><sup>[<a href="#/references" role="doc-biblioref" onclick="">1</a>]</sup></span>.</li>
 <li>Web scraping (also called <strong>text and data mining (TDM)</strong> by legal scholars) is a data collection method that allows for the automated extraction of insights and information from large amounts of text or data resources<span class="citation" data-cites="springernature2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">2</a>]</sup></span>.</li>
-<li>The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19 or combating misinformation<span class="citation" data-cites="fiil-flynn2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">3</a>]</sup></span>.</li>
+<li>The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19<span class="citation" data-cites="fiil-flynn2022"><sup>[<a href="#/references" role="doc-biblioref" onclick="">3</a>]</sup></span>.</li>
 </ul>
 <p><strong>Researchers require web scraping to generate data about the digital economy.</strong></p>
 </section>
@@ -419,8 +419,8 @@
 <h3>What is NOT copyright?</h3>
 <ul>
 <li>Copyright does not protect ideas, concepts, systems, or methods of doing something<span class="citation" data-cites="u.s.copyrightoffice2016"><sup>[<a href="#/references" role="doc-biblioref" onclick="">5</a>]</sup></span>.</li>
-<li>There are some exceptions to the copyright law such as research, teaching, parody, critique, news reporting, or commentary. However, each instance of potential copyright infringement must be evaluated individually as copyright issues are not always unambiguous like personal data issues.</li>
-<li>Limiting the extraction to factual matters, such as names of products and prices, may also be acceptable without violating copyright laws as facts are usually not protected by such laws<span class="citation" data-cites="daruwalla2019"><sup>[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</sup></span>.</li>
+<li>While certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous like personal data issues.</li>
+<li>Extracting only factual information, such as product names and prices, may be permissible without infringing copyright laws, as facts are typically not protected by such laws<span class="citation" data-cites="daruwalla2019"><sup>[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</sup></span>.</li>
 </ul>
 </section>
 <section id="research-exceptions-in-copyright-laws" class="slide level3 smaller">
@@ -552,7 +552,12 @@
 <ul>
 <li>The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA), which includes all EU countries, plus Iceland, Liechtenstein, and Norway.</li>
 <li>Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens<span class="citation" data-cites="wolford2018"><sup>[<a href="#/references" role="doc-biblioref" onclick="">11</a>]</sup></span>.</li>
-<li>To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to receive a <strong>consent</strong> of a person of which data you’re going to process, to be performing <strong>a task carried out in the public interest</strong> or, as a controller or even as a third party, <strong>to have a legitimate interest</strong> to process the data and such <strong>processing is necessary to achieve that interest</strong><span class="citation" data-cites="szwed2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">9</a>]</sup></span>.</li>
+<li>To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to:
+<ul>
+<li>receive a <strong>consent</strong> of a person of which data you’re going to process,</li>
+<li>be performing <strong>a task carried out in the public interest</strong> or, as a controller or even as a third party,</li>
+<li><strong>have a legitimate interest</strong> to process the data and such <strong>processing is necessary to achieve that interest</strong><span class="citation" data-cites="szwed2021"><sup>[<a href="#/references" role="doc-biblioref" onclick="">9</a>]</sup></span>.</li>
+</ul></li>
 </ul>
 </section>
 <section id="lawful-reasons-gdpr" class="slide level3 smaller">
@@ -623,12 +628,12 @@
 </section>
 <section id="step-1-territorial-scope" class="title-slide slide level2 smaller center">
 <h2>Step 1: Territorial Scope</h2>
-<p>It’s important to consider the territorial scope when evaluating the legality of a web scraping project so you can ensure that it is compliant with the laws of the relevant jurisdictions.</p>
+<p>Consider territorial scope when evaluating web scraping legality for compliance with relevant jurisdiction laws.</p>
 <ul>
 <li><strong>Check the jurisdiction of the website</strong>: Determine the location of the website and the jurisdiction under which it operates.</li>
 <li><strong>Check the jurisdiction of the data subject</strong>: If the website contains personal data, determine the jurisdiction of the data subject.</li>
 <li><strong>Check the jurisdiction of the scraper</strong>: Determine the location of the scraper and the jurisdiction under which it operates.</li>
-<li><strong>Consider cross-border data transfer restrictions</strong>: Some countries have restrictions on the transfer of personal data outside of their jurisdiction. Make sure to understand any applicable restrictions and ensure that the data being scraped is being transferred in a legal manner.</li>
+<li><strong>Consider cross-border data transfer restrictions</strong>: Some countries have restrictions on the transfer of personal data outside of their jurisdiction. Make sure that the data being scraped is being transferred in a legal manner.</li>
 </ul>
 </section>
 
@@ -652,7 +657,7 @@
 <h2>Step 3: The Type and Use of Data</h2>
 <ul>
 <li><strong>Do you really need personal data?</strong> You should always anonymize the personal data if there is an option to do so.</li>
-<li><strong>Is the data considered to be sensitive?</strong> Scraping sensitive data means that you are subject to additional rules and require specific consent to be given for this data to be scraped and stored. Therefore, unless you have clear explicit consent and legitimate reason to scrape this data you should avoid scraping it.</li>
+<li><strong>Is the data considered to be sensitive?</strong> Scraping sensitive data entails complying with additional rules and obtaining specific consent for its scraping and storage. Avoid scraping it without a legitimate reason and clear explicit consent.</li>
 <li><strong>What is the extent of the proposed data collection?</strong> An important aspect of GDPR is that companies should only collect and handle the minimum amount of data necessary to successfully perform a specific task.</li>
 <li><strong>How you plan to use the data post-extraction?</strong> Under GDPR you need to have a clear and legal reason for scraping data and be able to demonstrate that it will be used for legitimate purposes.</li>
 </ul>
