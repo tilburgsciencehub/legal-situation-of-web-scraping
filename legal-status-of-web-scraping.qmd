@@ -15,25 +15,27 @@ format:
       data-background-opacity: "0.2"
       data-background-size: cover
       data-background-color: "black"
+filters:
+  - newpagelink.lua
 ---
 
-# Agenda
+# ![](img/agenda-icon.png) Agenda
 
 1.  Motivation and disclaimer
 2.  Overview of legal situation
 3.  Step-by-step plan to evaluate legality (or, to improve it)
 
-```{=html}
-<!--
-## Motivation
 
-![](img/tdm.png)
+# 1. Motivation & Disclaimer
 
-<font size="2" color=grey> Image: [Springer Nature](https://www.springernature.com/gp/researchers/text-and-data-mining) </font> 
+![](img/motivation.jpg){fig-align="centre"}
 
--->
-```
-## Motivation {.smaller}
+<font size="2" color=grey> Image: [by pikisuperstar on Freepik](https://www.freepik.com/free-vector/file-searching-concept-landing-page_5362046.htm) </font> 
+
+
+
+
+## ![](img/motivation-icon.png) Motivation {.smaller}
 
 -   In the past, getting data for research was challenging and expensive, but today, digital technology and the internet have made a vast amount of data easily accessible online.
 -   This data offers real-time insights into various societal processes, relationships, and interactions, enabling researchers to answer research questions more accurately and efficiently @krotov2020.
@@ -42,7 +44,8 @@ format:
 
 **Researchers require web scraping to generate data about the digital economy.**
 
-## Legal Challenges
+
+## ![](img/legal-icon.png) Legal Challenges
 
 This presentation touches upon the various legal challenges faced by academic researchers (and businesses alike).
 
@@ -51,39 +54,47 @@ This presentation touches upon the various legal challenges faced by academic re
 -   Personal data and GDPR (e.g., "You're infringing on users' right for data protection -- even if the data is public!")
 -   Computer fraud and abuse act (e.g., "You're hacking my servers!")
 
-## Disclaimer
+
+## ![](img/disclaimer-icon.png) Disclaimer
 
 -   I'm not a lawyer (but this has been duely compiled, on the basis of legal resources)
 -   The legal situation is still changing rapidly, and this deck may be outdated (soon)
 
-# Legal Challenges
 
-![](img/challenges.png)
+# 2. Legal Situation
 
-<font size="2" color=grey> Image: [OpenClassrooms](https://openclassrooms.com/en/courses/6902811-learn-python-basics/7091521-meet-the-challenges-to-web-scraping) </font>
+![](img/legal-situation.jpg){fig-align="centre"}
 
-## Copyright
+<font size="2" color=grey> Image: [by vector4stock on Freepik](https://www.freepik.com/free-vector/judge-online-service-platform-court-worker-stand-justice-law-judge-traditional-black-robe-hearing-case-online-appeal-flat-vector-illustration_26477413.htm) </font>
 
-### What's copyright? {.smaller}
+
+##
+![](img/copyright.jpg){fig-align="right"}
+
+<font size="2" color=grey> Image: [Investopedia / Joules Garcia](https://www.investopedia.com/terms/c/copyright.asp) </font>
+
+
+### ![](img/copyright-icon.png) What's copyright? {.smaller}
 
 -   Web scraping research is limited by a patchwork of copyright laws across different jurisdictions.
 -   Text, images, videos, music, databases and other materials used by researchers are subject to copyright law, which gives the owner (e.g., businesses, individuals) the right to prohibit exploitation (e.g., replication or capturing) without permission.
 - The fact that data is available on the internet does not imply that anyone can extract and store the information @daruwalla2019.
 -  Although some publishers provide limited copyright licences for TDM use, paid licencing is not an affordable option for many critical research projects @fiil-flynn2022.
 
-### What is NOT copyright? {.smaller}
+
+### ![](img/no-copyright-icon.png) What is NOT copyright? {.smaller}
 
 -   Copyright does not protect ideas, concepts, systems, or methods of doing something @u.s.copyrightoffice2016.
 -   While certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous like personal data issues.
 -   Extracting only factual information, such as product names and prices, may be permissible without infringing copyright laws, as facts are typically not protected by such laws @daruwalla2019.
 
-### <font size="10">Research exceptions in copyright laws</font> {.smaller}
+### ![](img/research-exception-icon.png) Research exceptions in copyright laws {.smaller}
 
 ::: columns
 ::: {.column width="40%"}
 -   Nearly all countries provide strong copyright protection based on multiple international treaties.
 -   These treaties require countries to enforce high copyright standards, but they allow for exceptions, such as those permitting research, to be decided by national legislatures and courts @fiil-flynn2022.
--   This results in the varied and inconsistent landscape of exceptions depicted in the figure on the right.
+-   This results in the varied and inconsistent landscape of exceptions (see image).
 :::
 
 ::: {.column width="60%"}
@@ -95,7 +106,8 @@ This presentation touches upon the various legal challenges faced by academic re
 :::
 :::
 
-### US: Digital Millennium Copyright Act {.smaller}
+
+### ![](img/us-copyright-icon.png) US: Digital Millennium Copyright Act {.smaller}
 
 -   Scraping facts is allowed @daruwalla2021.
 -   Fair Use Doctrine:
@@ -105,14 +117,16 @@ This presentation touches upon the various legal challenges faced by academic re
     -   effect of the use upon the potential market for or value of the copyrighted work @u.s.copyrightoffice2023.
 -   Limited database protection @daruwalla2021.
 
-### EU: Copyright Directive {.smaller}
+
+### ![](img/eu-copyright-icon.png) EU: Copyright Directive {.smaller}
 
 -   Scraping facts is allowed but may vary in country specific law.
 -   Copyright exceptions are country specific.
 -   There is no 'fair use' doctrine in EU copyright law comparable to that of the US. Instead, EU law provides an explicit list of exceptions from copyrights granted to the rights holders, each with a specific scope @witzelerbbacku&partnerrechtsanwaltembb2021.
 -   Broad database protection based on Database Directive @daruwalla2021.
 
-### Database Rights {.smaller}
+
+### ![](img/database-icon.png) Database Rights {.smaller}
 
 **Database rights** are a subset of copyright. A database is an organized collection of materials that allows users to search and access individual pieces of information.
 
@@ -126,26 +140,31 @@ When scraping a data source that might fall under database rights, decision-make
 
 Because the copyright protects the structure and organisation of the database (rather than the data contained within), scraping cannot result in copying and, for example, republishing the original database's structure (or a substantial part of it) @szwed2021.
 
-### The TDM Exception {.smaller}
+
+### ![](img/tdm-exception-icon.png) The TDM Exception {.smaller}
 
 -   The new "Digital Single Market" (DSM) directive on copyright permits scraping (reproduction and extraction) of data from databases for the purposes of text and data mining, even if the data is protected by copyright.
 -   However, the exception is limited: database owners have the option to restrict the reproduction and extraction of databases and their content.
 -   That restriction must be implemented in such a way that bots and crawlers, among others, can see it (therefore, on a website there should be installed for example a special program communicating visiting scraping programs that scraping is prohibited).
 -   Therefore, unless you take a large amount of data/structure and later republish or sell it, there is a good chance you will not violate any intellectual property rights @szwed2021.
 
-<!--
-# Legal Compliance <br>in Web Scraping
-
-<center>![](img/legal-compliance.png){height="50%" width="50%"}</center>
--->
 
 ## Terms of Service {.smaller}
-
+::: columns
+::: {.column width="40%"}
 A **Terms of Service (ToS)**, Terms of Use, or Privacy Policy can be found on almost every website. 
 
 Therefore, the following question arises: *Do we have to abide by the website's Terms of Services?*
+:::
 
-### How are legal terms enacted? {.smaller}
+::: {.column width="60%" style="text-align: right;"}
+![](img/tos.png)
+<font size="2" color=grey> Image: [Delesign Graphics](https://iconscout.com/illustration/signing-terms-of-services-2112511) </font>
+:::
+:::
+
+
+### ![](img/terms-icon.png) How are legal terms enacted? {.smaller}
 
 The response is based on the kind of legal terms of service that are in place:
 
@@ -163,15 +182,18 @@ The response is based on the kind of legal terms of service that are in place:
 | \- Courts have ruled that your explicit agreement creates a binding contract that you must follow.                                                              | \- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them @daruwalla2021. |
 
 ## Personal Data
+![](img/personal-data.jpg){fig-align="centre"}
 
-### What is Personal Data? {.smaller}
+<font size="2" color=grey> Image: [by vectorjuice on Freepik](https://www.freepik.com/free-vector/competent-resume-writing-professional-cv-constructor-online-job-application-profile-creation-african-american-woman-filling-up-digital-form-concept-illustration_11668469.htm) </font> 
+
+### ![](img/personal-data-icon.png) What is Personal Data? {.smaller}
 
 -   Personal data, or personally identifiable information (PII), refers to any data that can directly or indirectly identify an individual.
 -   Common types of personal data include name, email, phone number, address, user name, IP address, date of birth, employment information, bank/credit card information, medical data, and biometric data.
 -   Public personal data is not an exception so analysis must be conducted before scraping it.
 -   Different legal jurisdictions (US, EU, Canada, Australia etc.) have different regulations for personal data so you need to identify the jurisdiction in which the data owners reside @daruwalla2019.
 
-### GDPR Compliance {.smaller}
+### ![](img/gdpr-icon.png) GDPR Compliance {.smaller}
 
 -   The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA), which includes all EU countries, plus Iceland, Liechtenstein, and Norway.
 -   Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens @wolford2018.
@@ -235,9 +257,11 @@ Even when you received an explicit consent from the data subject, you need to en
 -   Obtain explicit consent from the owner of a residential IP before using it as a web scraping proxy.
 -   If obtaining residential proxies from a third-party provider, ensure that they have obtained consent and are in compliance with GDPR before using the proxy @daruwalla2018.
 
-# Evaluate the Legality <br>of Your Scraping Project
+# 3. Evaluate the Legality <br>of Your Scraping Project
 
 <center>![](img/legal.png){height="50%" width="50%"}</center>
+
+<font size="2" color=grey> Image: [Pixabay](https://pixabay.com/vectors/judge-court-gavel-administration-7602999/) </font> 
 
 ## Step 1: Territorial Scope {.smaller}
 
