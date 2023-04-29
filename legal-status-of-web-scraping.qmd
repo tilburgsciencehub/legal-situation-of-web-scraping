@@ -1,6 +1,6 @@
 ---
 title: "Is __Web Scraping__ Legal?"
-subtitle: "How to evaluate the legality of web scraping for your research"
+subtitle: "How to evaluate the legality of web scraping <br>for your research"
 bibliography: library.bib
 csl: apa-numeric-superscript-brackets.csl
 format:
@@ -37,7 +37,7 @@ filters:
 
 ## ![](img/motivation-icon.png) Motivation {.smaller}
 
--   In the past, getting data for research was challenging and expensive, but today, digital technology and the internet have made a vast amount of data easily accessible online.
+-   In the past, getting data for research was challenging and expensive, but digital technology and the internet have made a vast amount of data easily accessible online.
 -   This data offers real-time insights into various societal processes, relationships, and interactions, enabling researchers to answer research questions more accurately and efficiently @krotov2020.
 -   Web scraping (also called **text and data mining (TDM)** by legal scholars) is a data collection method that allows for the automated extraction of insights and information from large amounts of text or data resources @springernature2018.
 -   The information acquired through TDM can be used to address various scientific and societal challenges, such as tracking the spread of diseases like COVID-19 @fiil-flynn2022.
@@ -45,7 +45,7 @@ filters:
 **Researchers require web scraping to generate data about the digital economy.**
 
 
-## ![](img/legal-icon.png) Legal Challenges
+## ![](img/legal-icon.png) Legal Challenges {.smaller}
 
 This presentation touches upon the various legal challenges faced by academic researchers (and businesses alike).
 
@@ -74,7 +74,7 @@ This presentation touches upon the various legal challenges faced by academic re
 <font size="2" color=grey> Image: [Investopedia / Joules Garcia](https://www.investopedia.com/terms/c/copyright.asp) </font>
 
 
-### ![](img/copyright-icon.png) What's copyright? {.smaller}
+### ![](img/copyright-icon.png) What's Copyright? {.smaller}
 
 -   Web scraping research is limited by a patchwork of copyright laws across different jurisdictions.
 -   Text, images, videos, music, databases and other materials used by researchers are subject to copyright law, which gives the owner (e.g., businesses, individuals) the right to prohibit exploitation (e.g., replication or capturing) without permission.
@@ -82,13 +82,13 @@ This presentation touches upon the various legal challenges faced by academic re
 -  Although some publishers provide limited copyright licences for TDM use, paid licencing is not an affordable option for many critical research projects @fiil-flynn2022.
 
 
-### ![](img/no-copyright-icon.png) What is NOT copyright? {.smaller}
+### ![](img/no-copyright-icon.png) What is NOT Copyright? {.smaller}
 
 -   Copyright does not protect ideas, concepts, systems, or methods of doing something @u.s.copyrightoffice2016.
 -   While certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous like personal data issues.
 -   Extracting only factual information, such as product names and prices, may be permissible without infringing copyright laws, as facts are typically not protected by such laws @daruwalla2019.
 
-### ![](img/research-exception-icon.png) Research exceptions in copyright laws {.smaller}
+### ![](img/research-exception-icon.png) Research Exceptions to Copyright {.smaller}
 
 ::: columns
 ::: {.column width="40%"}
@@ -132,7 +132,7 @@ This presentation touches upon the various legal challenges faced by academic re
 
 Copyright law protects databases when the way the data is selected or arranged is original and creative. In the EU, databases are protected under the Database Directive.
 
-When scraping a data source that might fall under database rights, decision-makers should consider:
+Consider the following when scraping a data source that may be subject to database rights:
 
 -   scraping only some data,
 -   scraping only the data itself (without the replication of the organization of that data),
@@ -164,7 +164,7 @@ Therefore, the following question arises: *Do we have to abide by the website's 
 :::
 
 
-### ![](img/terms-icon.png) How are legal terms enacted? {.smaller}
+### ![](img/terms-icon.png) How are Legal Terms Enacted? {.smaller}
 
 The response is based on the kind of legal terms of service that are in place:
 
@@ -195,7 +195,7 @@ The response is based on the kind of legal terms of service that are in place:
 
 ### ![](img/gdpr-icon.png) GDPR Compliance {.smaller}
 
--   The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA), which includes all EU countries, plus Iceland, Liechtenstein, and Norway.
+-   The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA).
 -   Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens @wolford2018.
 -   To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to:
     -   receive a **consent** of a person of which data you're going to process, 
