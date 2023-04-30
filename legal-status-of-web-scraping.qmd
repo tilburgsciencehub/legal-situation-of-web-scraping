@@ -29,11 +29,9 @@ filters:
 
 # 1. Motivation & Disclaimer
 
-![](img/motivation.jpg){fig-align="centre"}
+![](img/motivation.jpg){fig-align="center"}
 
 <font size="2" color=grey> Image: [by pikisuperstar on Freepik](https://www.freepik.com/free-vector/file-searching-concept-landing-page_5362046.htm) </font> 
-
-
 
 
 ## ![](img/motivation-icon.png) Motivation {.smaller}
@@ -55,6 +53,18 @@ This presentation touches upon the various legal challenges faced by academic re
 -   Personal data and GDPR (e.g., "You're infringing on users' right for data protection -- even if the data is public!")
 -   Computer fraud and abuse act (e.g., "You're hacking my servers!")
 
+## The Legal Case of hiQ v. LinkedIn {.smaller}
+
+- **Background**: LinkedIn attempts to block hiQ from web scraping publicly available data on its platform.
+
+- **Key Takeaways**: 
+    -   web scraping of **publicly available** data doesn't violate the Computer Fraud and Abuse Act (CFAA) because the concept of 'without authorization' does not apply to public websites @hanson2019,
+    -   hiQ violated LinkedIn's user agreement by scraping the site and using scraped data, as well as through turkers' creation of false identities on LinkedIn's platform @bryan2022.
+
+- **Implications**:
+    -   web scraping of publicly available data is not illegal under the CFA,
+    -   however, other legal issues, such as the type of data and the possibility of violating terms of service or copyright law, must be considered before scraping.
+
 
 ## ![](img/disclaimer-icon.png) Disclaimer
 
@@ -64,7 +74,7 @@ This presentation touches upon the various legal challenges faced by academic re
 
 # 2. Legal Situation
 
-![](img/legal-situation.jpg){fig-align="centre"}
+![](img/legal-situation.jpg){fig-align="center"}
 
 <font size="2" color=grey> Image: [by vector4stock on Freepik](https://www.freepik.com/free-vector/judge-online-service-platform-court-worker-stand-justice-law-judge-traditional-black-robe-hearing-case-online-appeal-flat-vector-illustration_26477413.htm) </font>
 
@@ -101,8 +111,6 @@ This presentation touches upon the various legal challenges faced by academic re
 ::: {.column width="60%"}
 ![](img/research-exceptions.png)
 
-</center>
-
 <font size="2" color=grey> Image: [ADAPTED BY N. CARY/SCIENCE](https://www.science.org/doi/10.1126/science.add6124) </font>
 :::
 :::
@@ -131,15 +139,15 @@ This presentation touches upon the various legal challenges faced by academic re
 
 **Database rights** are a subset of copyright. A database is an organized collection of materials that allows users to search and access individual pieces of information.
 
-Copyright law protects databases when the way the data is selected or arranged is original and creative. In the EU, databases are protected under the Database Directive.
+Copyright law protects databases when the way the data is selected or arranged is original and creative. Therefore, scraping cannot result in copying and, for example, republishing the original database's structure (or a substantial part of it) @szwed2021.
 
-Consider the following when scraping a data source that may be subject to database rights:
+Non-original databases can also be protected if a significant investment was made in obtaining, verifying, and presenting the data @europeancommission2022.
+
+When scraping a data source that may be subject to database rights, consider:
 
 -   scraping only some data,
 -   scraping only the data itself (without the replication of the organization of that data),
 -   limiting the data scraped to factual or non-copyrighted data @daruwalla2019.
-
-Because the copyright protects the structure and organisation of the database (rather than the data contained within), scraping cannot result in copying and, for example, republishing the original database's structure (or a substantial part of it) @szwed2021.
 
 
 ### ![](img/tdm-exception-icon.png) The TDM Exception {.smaller}
@@ -158,7 +166,7 @@ A **Terms of Service (ToS)**, Terms of Use, or Privacy Policy can be found on al
 Therefore, the following question arises: *Do we have to abide by the website's Terms of Services?*
 :::
 
-::: {.column width="60%" style="text-align: right;"}
+::: {.column width="60%" style="text-align: right"}
 ![](img/tos.png)
 <font size="2" color=grey> Image: [Delesign Graphics](https://iconscout.com/illustration/signing-terms-of-services-2112511) </font>
 :::
@@ -183,7 +191,7 @@ The response is based on the kind of legal terms of service that are in place:
 | \- Courts have ruled that your explicit agreement creates a binding contract that you must follow.                                                              | \- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them @daruwalla2021. |
 
 ## Personal Data
-![](img/personal-data.jpg){fig-align="centre"}
+![](img/personal-data.jpg){fig-align="center"}
 
 <font size="2" color=grey> Image: [by vectorjuice on Freepik](https://www.freepik.com/free-vector/competent-resume-writing-professional-cv-constructor-online-job-application-profile-creation-african-american-woman-filling-up-digital-form-concept-illustration_11668469.htm) </font> 
 
