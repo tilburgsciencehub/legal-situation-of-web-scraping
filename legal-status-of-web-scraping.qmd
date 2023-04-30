@@ -10,6 +10,7 @@ format:
     controls: true
     preview-links: auto
     theme: default
+    embed-resources: true
     title-slide-attributes:
       data-background-image: "img/title-background.jpg" 
       data-background-opacity: "0.2"
