@@ -82,7 +82,7 @@ This presentation touches upon the various legal challenges faced by academic re
 
 ## ![](img/disclaimer-icon.png) Disclaimer
 
--   I'm not a lawyer (but this has been duely compiled, on the basis of legal resources)
+-   I'm not a lawyer (but this has been duly compiled, on the basis of legal resources)
 -   The legal situation is still changing rapidly, and this deck may be outdated (soon)
 
 
@@ -110,7 +110,8 @@ This presentation touches upon the various legal challenges faced by academic re
 ### ![](img/no-copyright-icon.png) What is NOT Copyright? {.smaller}
 
 -   Copyright does not protect ideas, concepts, systems, or methods of doing something @u.s.copyrightoffice2016.
--   While certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous.
+-   Certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law.
+-   However, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous.
 -   Extracting only factual information, such as product names and prices, may be permissible without infringing copyright laws, as facts are typically not protected by such laws @daruwalla2019.
 
 ### ![](img/research-exception-icon.png) Research Exceptions to Copyright {.smaller}
@@ -168,7 +169,7 @@ When scraping a data source that may be subject to database rights, consider:
 
 -   The new "Digital Single Market" (DSM) directive on copyright permits scraping (reproduction and extraction) of data from databases for the purposes of text and data mining, even if the data is protected by copyright.
 -   However, the exception is limited: database owners have the option to restrict the reproduction and extraction of databases and their content.
--   That restriction must be implemented in such a way that bots and crawlers, among others, can see it (therefore, on a website there should be installed for example a special program communicating visiting scraping programs that scraping is prohibited).
+-   That restriction must be implemented in such a way that bots and crawlers, among others, can see it (therefore, on a website there should be installed, for example, a special program communicating visiting scraping programs that scraping is prohibited).
 -   Therefore, unless you take a large amount of data/structure and later republish or sell it, there is a good chance you will not violate any intellectual property rights @szwed2021.
 
 
@@ -202,7 +203,7 @@ The response is based on the kind of legal terms of service that are in place:
 ![Clickwrap](img/clickwrap.png){width="90%" fig-align="left"}
 :::
 ::: {.column width="50%"}
-![Browsewrap](img/browsewrap.png){fig-align="left"}
+![Browsewrap](img/browsewrap.png){width="70%" fig-align="left"}
 :::
 :::
 
@@ -226,22 +227,34 @@ The response is based on the kind of legal terms of service that are in place:
 | \- Courts have ruled that your explicit agreement creates a binding contract that you must follow.                                                              | \- Most courts have ruled that this type of ToS is unenforceable, so even if the terms forbid you from using the service, you may not be in violation of them @daruwalla2021. |
 
 ## Personal Data
-![](img/personal-data.jpg){fig-align="center"}
+::: columns
+::: {.column width="50%"}
+**Personal data**, or personally identifiable information (PII), refers to any data that can directly or indirectly identify an individual.
+:::
+
+::: {.column width="50%" style="text-align: right"}
+![](img/personal-data.jpg){width="80%" fig-align="center"}
 
 <font size="2" color=grey> Image: [by vectorjuice on Freepik](https://www.freepik.com/free-vector/competent-resume-writing-professional-cv-constructor-online-job-application-profile-creation-african-american-woman-filling-up-digital-form-concept-illustration_11668469.htm) </font> 
+:::
+:::
 
 ### ![](img/personal-data-icon.png) What is Personal Data? {.smaller}
 
--   Personal data, or personally identifiable information (PII), refers to any data that can directly or indirectly identify an individual.
--   Common types of personal data include name, email, phone number, address, user name, IP address, date of birth, employment information, bank/credit card information, medical data, and biometric data.
+-   Common types of personal data include, e.g.:
+      - identifying information such as name and surname or date of birth,
+      - contact details such as email or phone number,
+      - online details such as user name or IP address,
+      - and other data such as employment information or medical data.
 -   Public personal data is not an exception so analysis must be conducted before scraping it.
 -   Different legal jurisdictions (US, EU, Canada, Australia etc.) have different regulations for personal data so you need to identify the jurisdiction in which the data owners reside @daruwalla2019.
 
 ### ![](img/gdpr-icon.png) GDPR Compliance {.smaller}
 
 -   The General Data Protection Regulation (GDPR) covers the European Economic Area (EEA).
--   Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EU citizens @wolford2018.
--   To use or store personal data of EU citizens, a company or an organisation must comply with one or more of the legal reasons described by GDPR. You may, therefore, need either to:
+-   Although it was drafted and passed by the European Union (EU), it imposes obligations on all organisations that target or gather information about EEA nationals @wolford2018.
+-   To use or store personal data of EEA nationals, a company or an organisation must comply with one or more of the legal reasons described by GDPR. 
+<br>You may, therefore, need either to:
     -   receive a **consent** of a person of which data you're going to process, 
     -   be performing **a task carried out in the public interest** or, as a controller or even as a third party, 
     -   **have a legitimate interest** to process the data and such **processing is necessary to achieve that interest** @szwed2021.
@@ -258,7 +271,7 @@ In all other cases, the company or organisation must obtain the data subject's p
 
 ### Type of Personal Data (GDPR) {.smaller}
 
-Next to establishing the lawful reason for scraping data, you should also consider the type of personal data being collected. **Sensitive data** is a subject to additional rules and requires explicit consent to be given for this data to be scraped and stored.
+**Sensitive data** is a subject to additional rules and requires explicit consent to be given for this data to be scraped and stored.
 
 Sensitive data includes:
 
@@ -270,7 +283,7 @@ Sensitive data includes:
 -   health, sex life or sexual orientation data,
 -   or trade union membership.
 
-Therefore, you should avoid scraping this data unless you have explicit consent and legitimate reason to do so @daruwalla2018.
+Therefore, you should avoid scraping sensitive data unless you have explicit consent and legitimate reason to do so @daruwalla2018.
 
 ### Data Protection Principles (GDPR) {.smaller}
 
@@ -300,6 +313,20 @@ Even when you received an explicit consent from the data subject, you need to en
 -   Ensure that any EU residential IPs used as proxies are GDPR compliant.
 -   Obtain explicit consent from the owner of a residential IP before using it as a web scraping proxy.
 -   If obtaining residential proxies from a third-party provider, ensure that they have obtained consent and are in compliance with GDPR before using the proxy @daruwalla2018.
+
+## Computer Fraud and Abuse Act (CFAA)
+![](img/computer-fraud.jpg){fig-align="center"}
+
+<font size="2" color=grey> Image: [by storyset on Freepik](https://www.freepik.com/free-vector/phishing-account-concept-illustration_14562358.htm) </font> 
+
+### ![](img/hacker-icon.png) Computer Fraud and Abuse Act {.smaller}
+- The CFAA is a federal anti-hacking law in the United States that was originally passed in 1986.
+- The CFAA prohibits intentionally accessing a computer **without authorization** or **in excess of authorization**.
+- However, the term "without authorization" is not defined in the Act.
+- The US Court of Appeals for the Ninth Circuit confirmed that scraping publicly available data does not violate the CFAA.
+- The concept "without authorization" does not apply to public websites as they are designed to be accessible to anyone without restrictions @urban2022.
+
+
 
 # 3. Evaluate the Legality <br>of Your Scraping Project
 
