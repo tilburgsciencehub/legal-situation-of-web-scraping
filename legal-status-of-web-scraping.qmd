@@ -11,6 +11,7 @@ format:
     preview-links: auto
     theme: default
     embed-resources: true
+    fig-cap-location: top
     title-slide-attributes:
       data-background-image: "img/title-background.jpg" 
       data-background-opacity: "0.2"
@@ -43,6 +44,19 @@ filters:
 
 **Researchers require web scraping to generate data about the digital economy.**
 
+## ![](img/web-icon.png) Use of Web Data in Research {.smaller}
+
+::: columns
+::: {.column width="40%"}
+"Most of the 313 identified web data-based articles rely on web scraping (59%); APIs are used much more sparingly (12%), and some articles combine web scraping and APIs (9%). The remaining articles-especially netnographic work-use web data but tend to extract it manually (20%) @boegershausen2022."
+:::
+
+::: {.column width="60%"}
+
+![Increased use of web data across the top five marketing journals (2001-2020).](img/web-data.png){#fig-web-data}
+
+:::
+:::
 
 ## ![](img/legal-icon.png) Legal Challenges {.smaller}
 
@@ -53,7 +67,7 @@ This presentation touches upon the various legal challenges faced by academic re
 -   Personal data and GDPR (e.g., "You're infringing on users' right for data protection -- even if the data is public!")
 -   Computer fraud and abuse act (e.g., "You're hacking my servers!")
 
-## The Legal Case of hiQ v. LinkedIn {.smaller}
+## ![](img/law-icon.png) The Legal Case of hiQ v. LinkedIn {.smaller}
 
 - **Background**: LinkedIn attempts to block hiQ from web scraping publicly available data on its platform.
 
@@ -96,7 +110,7 @@ This presentation touches upon the various legal challenges faced by academic re
 ### ![](img/no-copyright-icon.png) What is NOT Copyright? {.smaller}
 
 -   Copyright does not protect ideas, concepts, systems, or methods of doing something @u.s.copyrightoffice2016.
--   While certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous like personal data issues.
+-   While certain activities such as research, teaching, parody, critique, news reporting, or commentary may be exempt from copyright law, each potential infringement must be evaluated on a case-by-case basis, as copyright issues are not always unambiguous.
 -   Extracting only factual information, such as product names and prices, may be permissible without infringing copyright laws, as facts are typically not protected by such laws @daruwalla2019.
 
 ### ![](img/research-exception-icon.png) Research Exceptions to Copyright {.smaller}
@@ -105,11 +119,11 @@ This presentation touches upon the various legal challenges faced by academic re
 ::: {.column width="40%"}
 -   Nearly all countries provide strong copyright protection based on multiple international treaties.
 -   These treaties require countries to enforce high copyright standards, but they allow for exceptions, such as those permitting research, to be decided by national legislatures and courts @fiil-flynn2022.
--   This results in the varied and inconsistent landscape of exceptions (see image).
+-   This results in the varied and inconsistent landscape of exceptions (see @fig-research-exceptions).
 :::
 
 ::: {.column width="60%"}
-![](img/research-exceptions.png)
+![Copyright exemptions for research around the world.](img/research-exceptions.png){#fig-research-exceptions}
 
 <font size="2" color=grey> Image: [ADAPTED BY N. CARY/SCIENCE](https://www.science.org/doi/10.1126/science.add6124) </font>
 :::
@@ -181,6 +195,27 @@ The response is based on the kind of legal terms of service that are in place:
 -   **browsewrap**: terms are considered browsewrap agreements if they are posted on a website, typically via a link at the bottom of the page;
 -   **scrollwrap**: sometimes seen as a sub-category of clickwrap, a scrollwrap agreement requires the users to scroll through the text of the ToS before they get to the "I Agree" button;
 -   **sign-in-wrap**: sign-in-wrap agreements are a hybrid of browsewrap and clickwrap. The act of acceptance here is the signing in or logging in with a note stating that by doing so, you are agreeing to the ToS @ruzickova2022.
+
+###
+::: columns
+::: {.column width="50%"}
+![Clickwrap](img/clickwrap.png){width="90%" fig-align="left"}
+:::
+::: {.column width="50%"}
+![Browsewrap](img/browsewrap.png){fig-align="left"}
+:::
+:::
+
+###
+::: columns
+::: {.column width="50%"}
+![Scrollwrap](img/scrollwrap.png){width="70%" fig-align="left"}
+:::
+::: {.column width="50%"}
+![Sign-in-wrap](img/sign-in-wrap.png){width="62%" fig-align="left"}
+:::
+:::
+
 
 ### Clickwrap vs Browsewrap {.smaller}
 
